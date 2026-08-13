@@ -1,0 +1,28 @@
+streamlit
+
+numpy
+pandas
+
+# face recognition ( scikit-learn -> svm -> classification -> identify different student from the image and finding there name )
+scikit-learn
+# face detection (square on face ) 
+dlib-bin
+# this helps in observing features of face in vector form (dlib)
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0 
+
+#database
+supabase
+#provide hashing(encription) for password
+bcrypt
+# generate QR code 
+segno
+# preprocessing of the image(always use when we deal whith images in python) 
+pillow
+# for frontend
+streamlit
+
+librosa
+resampy
+Resemblyzer
+webrtcvad-wheels
