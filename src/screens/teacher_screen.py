@@ -20,6 +20,33 @@ def teacher_screen():
     style_baground_dashboard()
     style_base_layout()
 
+    st.markdown("""
+        <style>
+
+        /* Welcome teacher text */
+        div[data-testid="stColumn"] h3 {
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Take AI Attendance heading */
+        h1 {
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Select Subject - white strip */
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+            background-color: white !important;
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Select Subject text */
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] span {
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        </style>
+    """, unsafe_allow_html=True)
+
     if "teacher_data" in st.session_state:
         teacher_dashboard()
     elif "teacher_login_type" not in st.session_state or st.session_state.teacher_login_type=="login":
@@ -264,6 +291,34 @@ def login_teacher(username, password):
         return True
 
 def teacher_screen_login():
+
+    st.markdown("""
+        <style>
+
+        /* Login page heading */
+        h1 {
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Username and password labels */
+        div[data-testid="stTextInput"] label {
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Username and password input boxes */
+        div[data-testid="stTextInput"] input {
+            background-color: white !important;
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Placeholder text */
+        div[data-testid="stTextInput"] input::placeholder {
+            color: rgba(0, 0, 0, 0.35) !important;
+        }
+
+        </style>
+    """, unsafe_allow_html=True)
+        
     c1, c2 = st.columns(2, vertical_alignment= 'center', gap='xxlarge')
     with c1:
         header_dashboard()
@@ -312,6 +367,34 @@ def register_teacher(teacher_username, teacher_name, teacher_pass, teacher_pass_
 
  
 def teacher_screen_register():
+
+    st.markdown("""
+        <style>
+
+        /* Register page heading */
+        h1 {
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Input labels */
+        div[data-testid="stTextInput"] label {
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* White input strips */
+        div[data-testid="stTextInput"] input {
+            background-color: white !important;
+            color: rgba(0, 0, 0, 0.75) !important;
+        }
+
+        /* Faded placeholder text */
+        div[data-testid="stTextInput"] input::placeholder {
+            color: rgba(0, 0, 0, 0.35) !important;
+        }
+
+        </style>
+    """, unsafe_allow_html=True)
+
     c1, c2 = st.columns(2, vertical_alignment= 'center', gap='xxlarge')
     with c1:
         header_dashboard()
