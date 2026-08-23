@@ -9,14 +9,6 @@ def home_screen():
     style_baground_home()
     style_base_layout()
 
-    st.markdown("""
-        <style>
-            div[data-testid="stColumn"] h2 {
-                color: rgba(0, 0, 0, 0.75) !important;
-            }
-        </style>
-    """, unsafe_allow_html=True)
-
     col1, col2 = st.columns(2, gap="large")
 
     with col1:

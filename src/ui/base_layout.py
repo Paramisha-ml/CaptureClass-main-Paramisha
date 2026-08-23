@@ -33,6 +33,7 @@ def style_base_layout():
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
         /* hide toolbar of stramlit */
 
             #MainMenu, footer, header{
